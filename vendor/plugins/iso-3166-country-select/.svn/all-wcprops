@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/iso-3166-country-select
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/iso-3166-country-select/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/iso-3166-country-select/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/iso-3166-country-select/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/iso-3166-country-select/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/iso-3166-country-select/README
+END

@@ -1,0 +1,8 @@
+<% if params[:venue_id] and params[:event_id] %>
+	<% @photo_path = venue_event_photo_path(photo.events.find(params[:event_id]).venue, photo.events.find(params[:event_id]), photo)%>
+<% elsif params[:venue_id] %>
+	<% @photo_path = venue_photo_path(params[:venue_id], photo) %>
+<% end %>
+<li class="photo clickable" id="photo_<%= photo.id %>">
+	<%= link_to(image_tag(photo.photo(:album), :class => "album"), @photo_path) %>
+</li>

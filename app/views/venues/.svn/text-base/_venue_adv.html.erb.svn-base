@@ -1,0 +1,31 @@
+<li class="clearfix venue list" id="venue_<%= venue.id %>">
+	<%= link_to image_tag(venue.logo(:avatar), :alt => h(venue.name)) %>
+	<div class="content">
+		<h3>
+			<%= link_to venue.name, venue_path(venue), :title => venue.name %>
+			<%= content_tag :span, venue.city, :class => "location" %>
+		</h3>
+		<div class="stats">
+			<table cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td><%= pluralize(venue.events.size, "event") %></td>
+						<td><%= pluralize(0, "photo") %></td>
+						<td>Connect</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="business">
+			<table>
+				<tbody>
+					<tr>
+						<td><%= link_to t('venues.settings.link'), edit_venue_path(venue) %></td>
+						<td><%= link_to t('venues.sync.link'), sync_venue_path(venue) %></td>
+						<td><%= link_to t('venues.connect.link'), connect_venue_path(venue) %></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</li>

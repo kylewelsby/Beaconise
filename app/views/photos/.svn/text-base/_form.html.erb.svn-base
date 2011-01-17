@@ -1,0 +1,35 @@
+<%- session_key_name = ActionController::Base.session_options[:key] -%>
+<%= f.error_messages %>
+<% f.inputs :name => "Upload Photos" do %>
+	<%= f.input :photo %>
+<% end %>
+<%= f.buttons %>
+<script type="text/javascript" charset="utf-8">
+	$('#photo_photo').uploadify({ 
+		'uploader'		: '/flash/uploadify.swf',
+		'script'		: $("#new_photo").attr("action"),
+		'cancelImg'		: '/images/woofunction-icons/close_16.png',
+		'auto'			: true,
+		'multi'			: true,
+		'method'		: 'POST', 
+		'simUploadLimit': '3', 
+		'scriptAccess'	: 'always', 
+		'fileDataName'	: 'filedata',
+		'sizeLimit'		: '<%= 20.megabyte %>', 
+		'fileDesc'		: 'Select photos to upload. Multiple photos can be uploaded at the same time',
+		'fileExt'		: '*.jpg;*.jpeg;*.png;*.gif', 
+		'scriptData'	: {
+		'<%= session_key_name %>' : encodeURIComponent('<%= u(cookies[session_key_name]) %>'),
+		'authenticity_token'  : encodeURIComponent('<%= u(form_authenticity_token) if protect_against_forgery? %>')
+		},
+		'onError'		: function(event, queueID, fileObj, reposnse, data){
+			alert('Error ' + reposnse.type + ': ' + reposnse.info );
+		},
+		'onComplete'	: function(event, queueID, fileObj, reposnse, data){
+			var patt = new RegExp(/\d+/);
+			id = patt.exec(reposnse)
+			$.getScript('<%= url_for(:controller => "photos", :action => "get_single") %>?id='+id+'&gallery_id=<%= params[:gallery_id] || params[:id] %>&event_id=<%= params[:event_id] || params[:id] %>','');
+		},
+	});
+	$("#new_photo .buttonHolder").hide();
+</script>

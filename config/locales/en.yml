@@ -1,0 +1,75 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  greeting: "Hello"
+  events:
+    link: "Events"
+    rsvp:
+      yes: "Attending Event"
+      maybe: "Might be Attending"
+      no: "Not Attending"
+  venues:
+    link: "Venues"
+    business_owner: "I'm a business owner and want to add my venue"
+    settings:
+      link: "Settings"
+    sync:
+      link: "Sync"
+    connect:
+      link: "Connect"
+      tilllate:
+        success: "We've successfully found your venue on TillLate"
+        error: "We failed to find your venue on tilllate"
+      songkick:
+        success: "We've successfully found your venue on SongKick"
+        error: "We failed to find your venue on SongKick"
+  users:
+    photos:
+      link: "Photos"
+      title: "Photos of me and my friends"
+    profile:
+      link: "Profile"
+      visit: "Visit Profile"
+      title: "{{name}}'s profile"
+    dashboard:
+      link: "Dashboard"
+      title: "Whats happening with all my stuff"
+    settings:
+      link: "Settings"
+      title: "Update your account settings"
+      success: "Your settings have successfully been updated"
+      error: "Oops, coulden't update your settings right now. Please try again"
+  about:
+    link: "About"
+  advertising:
+    link: "Advertising"
+  developers: 
+    link: "Developers"
+  careers:
+    link: "Careers"
+  terms:
+    link: "Terms"
+  notice:
+    rsvp:
+      yes: "You're going to enjoy this event, see you there."
+      maybe: "You're might miss this event."
+      no: "It's a shame your not going."
+      was: "You must of had a great time."
+      wasnt: "Shame you missed out."
+  error:
+    rsvp: "Unable to save RSVP"
+      
+  formtastic:
+    titles: 
+      event:
+        main_price: "Main Price"
+        student_price: "Student Price"
+        member_price: "Members Price"
+        women_price: "Women Only Price"
+      business:
+        account: "Business Account"
+        venue: "First Venue"
+    labels:
+      user:
+        female: "Gender"

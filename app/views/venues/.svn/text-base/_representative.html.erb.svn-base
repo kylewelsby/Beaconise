@@ -1,0 +1,4 @@
+<li>
+	<h5><%= representative.name %> <%= representative.surname %></h5>
+	<div class="role"><%= representative.id %></div>
+</li>

@@ -1,0 +1,50 @@
+<% if current_user.facebook_uid and current_user.password.nil? %>
+	Update your settings via Facebook 
+<% else %>
+	<h2>Edit <%= resource_name.to_s.humanize %></h2>
+	<% if current_user.facebook_connected? %>
+		Account setup with FaceBook
+	<% else%>
+		<%# fb_prompt_permission(['email','offline_access','status_update','sms','rsvp_event','publish_stream'], "Would you like to grant some permissions?" ) %>
+		<%= facebook_connect_link(:user) %>
+	<% end %>
+	<% semantic_form_for(resource, :url => registration_path(resource_name), :html => {:method => :put}) do |f| %>
+		<%= f.error_messages %>
+		<% f.inputs :Name do %>
+			<%= f.input :username %>
+			<%= f.input :forename %>
+			<%= f.input :surname %>
+		<% end %>
+	
+		<% f.inputs :password do %>
+			<%= f.input :password %>
+			<%= f.input :password_confirmation %>
+		<% end %>
+	
+		<% f.inputs :Mobile do %>
+			<%= f.input :mobile, :as => :numeric %>		
+		<% end %>
+	
+		<% f.inputs :Address do %>
+			<%= f.input :address1, :label => "House Name/Number & Street" %>
+			<%= f.input :address2, :label => "Neighbourhood" %>
+			<%= f.input :town, :label => "Town" %>
+			<%= f.input :county, :label => "County" %>
+			<%= f.input :postcode, :label => "Postcode" %>
+			<%= f.input :country, :as => :country, :label => "Country" %>
+		<% end %>
+	
+		<% f.inputs :security do %>
+			<%= f.input :current_password %>
+		<% end %>
+	
+		<% f.buttons do %>
+			<%= f.commit_button %>
+		<% end %>
+	<% end %>
+<% end %>
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
+
+<%= render :partial => "shared/devise_links" %>

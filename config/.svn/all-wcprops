@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/beaconise/!svn/ver/55/branches/v2_0/config
+END
+facebooker.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/beaconise/!svn/ver/55/branches/v2_0/config/facebooker.yml
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/beaconise/!svn/ver/55/branches/v2_0/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/beaconise/!svn/ver/55/branches/v2_0/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/beaconise/!svn/ver/55/branches/v2_0/config/boot.rb
+END
+cucumber.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/beaconise/!svn/ver/55/branches/v2_0/config/cucumber.yml
+END
+last_fm.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/beaconise/!svn/ver/55/branches/v2_0/config/last_fm.yml
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/beaconise/!svn/ver/55/branches/v2_0/config/environment.rb
+END
+lastfm.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/beaconise/!svn/ver/55/branches/v2_0/config/lastfm.yml
+END
+deploy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/beaconise/!svn/ver/55/branches/v2_0/config/deploy.rb
+END

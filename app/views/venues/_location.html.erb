@@ -1,0 +1,1 @@
+<%= content_tag :div, "<em>#{venue.city}</em>, #{content_tag :span, venue.county, :class => "address_county"}", :class => "location" unless venue.city.nil? or venue.county.nil? %>

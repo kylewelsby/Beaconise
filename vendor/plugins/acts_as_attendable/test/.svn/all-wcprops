@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_attendable/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_attendable/test/test_helper.rb
+END
+acts_as_attendable_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_attendable/test/acts_as_attendable_test.rb
+END

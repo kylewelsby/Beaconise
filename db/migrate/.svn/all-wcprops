@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate
+END
+20090723180555_create_photos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090723180555_create_photos.rb
+END
+20090825163710_galleries_photos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090825163710_galleries_photos.rb
+END
+20090730222059_create_venue_times.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090730222059_create_venue_times.rb
+END
+20091024200744_create_acts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091024200744_create_acts.rb
+END
+20090902212700_create_restful_easy_messages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090902212700_create_restful_easy_messages.rb
+END
+20091005114256_photos_exif_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091005114256_photos_exif_data.rb
+END
+20100603000722_devise_create_admins.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100603000722_devise_create_admins.rb
+END
+20091009182345_create_promoters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091009182345_create_promoters.rb
+END
+20090730215200_create_galleries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090730215200_create_galleries.rb
+END
+20100606000131_genres_events.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100606000131_genres_events.rb
+END
+20091019232943_alter_atendees.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091019232943_alter_atendees.rb
+END
+20091009184619_users_promoters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091009184619_users_promoters.rb
+END
+20100830084631_create_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100830084631_create_sessions.rb
+END
+20100605234543_create_genres_venues.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100605234543_create_genres_venues.rb
+END
+20090730220941_create_venues.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090730220941_create_venues.rb
+END
+20090730214951_create_events.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090730214951_create_events.rb
+END
+20091005130538_events_photos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091005130538_events_photos.rb
+END
+20090901134405_create_attendees.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090901134405_create_attendees.rb
+END
+20100602213438_devise_create_businesses.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100602213438_devise_create_businesses.rb
+END
+20100602213521_devise_create_promoters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100602213521_devise_create_promoters.rb
+END
+20100605231902_create_genres.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100605231902_create_genres.rb
+END
+20090825164401_venues_galleries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090825164401_venues_galleries.rb
+END
+20090901140242_create_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20090901140242_create_comments.rb
+END
+20100829133420_create_delayed_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100829133420_create_delayed_jobs.rb
+END
+20100907121253_create_event_prices.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100907121253_create_event_prices.rb
+END
+20091019220105_create_artists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20091019220105_create_artists.rb
+END
+20100602213305_devise_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/db/migrate/20100602213305_devise_create_users.rb
+END

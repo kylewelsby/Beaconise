@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/beaconise/!svn/ver/55/branches/v2_0/app/views/about
+END
+homepage.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/about/homepage.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/app/views/about/index.html.erb
+END
+advertisers.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/beaconise/!svn/ver/55/branches/v2_0/app/views/about/advertisers.html.erb
+END
+credits.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/about/credits.html.erb
+END
+jobs.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/beaconise/!svn/ver/55/branches/v2_0/app/views/about/jobs.html.erb
+END

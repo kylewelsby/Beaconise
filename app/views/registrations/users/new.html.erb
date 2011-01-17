@@ -1,0 +1,18 @@
+<h2>Sign up</h2>
+<% semantic_form_for(resource, :url => registration_path(resource_name)) do |f| %>
+	<%= f.error_messages %>
+	<% f.inputs do %>
+		<%= f.input :forename %>
+		<%= f.input :surname %>
+		<%= f.input :born_on %>
+		<%= f.input :female, :as => :select, :collection => [["Male", false], ["Female", true]] %>
+		<%= f.input :email %>
+		<%= f.input :password %>
+		<%= f.input :password_confirmation %>
+	<% end %>
+	<% f.buttons do %>
+		<%= f.commit_button %>
+	<% end %>
+<% end %>
+
+<%= render :partial => "shared/devise_links" %>

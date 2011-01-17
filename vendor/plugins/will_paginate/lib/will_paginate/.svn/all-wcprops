@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate
+END
+named_scope.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/named_scope.rb
+END
+array.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/array.rb
+END
+version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/version.rb
+END
+finder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/finder.rb
+END
+core_ext.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/core_ext.rb
+END
+collection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/collection.rb
+END
+named_scope_patch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/named_scope_patch.rb
+END
+view_helpers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/will_paginate/lib/will_paginate/view_helpers.rb
+END

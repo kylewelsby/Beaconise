@@ -1,0 +1,105 @@
+<%= display_current_sub_nav %>
+<%= display_current_small_vcard %>
+
+<% 
+
+if defined?(params[:gallery_id]) and !params[:gallery_id].nil?
+	@edit_path = edit_user_gallery_photo_path
+	@delete_path = user_gallery_photo_path
+	@next = user_gallery_photo_path(params[:user_id], params[:gallery_id], @q.id)
+elsif defined?(params[:event_id]) and !params[:event_id].nil?
+	@edit_path = edit_venue_event_photo_path
+	@delete_path = venue_event_photo_path
+	# @q = @collection.photos.find(:all, :conditions => ["photo_id > ?", @photo.id], :limit => 1)
+	@next = venue_event_photo_path(params[:venue_id], params[:event_id], @q.id)
+else
+	@edit_path = edit_user_photo_path
+	@delete_path = user_photo_path
+	@next = user_photo_path(params[:user_id], @q.id)
+end 	
+%>
+
+<% content_for(:aside) do %>
+	<h2>
+		Photos from <%= link_to(Event.first.title, venue_path(Event.first)) %>
+	</h2>
+	<ul class="photos square">
+		<% Photo.all.each do |photo| %>
+			<%= content_tag(:li, link_to(image_tag(photo.photo.url(:thumb)), venue_event_photo_path(photo.events.first.venue, photo.events.first, photo)), :class => "photo") %>
+		<% end %>
+	</ul>
+<% end %>
+
+<div class="photo clearfix">
+	<%= link_to image_tag(@photo.photo.url(:show)), @next %>
+</div>
+<div class="column_left">
+	<div class="column_left_content">
+		<%= render :layout => "comments/show", :locals => {:data => @photo, :type => "Photo" }%>
+	</div>
+</div>
+<div class="column_right">
+	<div class="section_container">
+		<ul class="info">
+			<li class="title"><%= @photo.photo_file_name %> </li>
+			<li class="owner">
+				Taken by <%= link_to get_owner(@photo).login, user_path(get_owner(@photo)) if @photo.user %>
+				<% if !@photo.taken_at and !@photo.device_make.nil? %>
+					on <%= datetime_ago(@photo.taken_at) %> with a <span class="device"><%= @photo.device_make %><%= @photo.device_model %></span>
+				<% end %>
+				<span class="created_at">Uploaded <%= datetime_ago(@photo.created_at) %></span>
+			</li>
+			<% if @photo.galleries or @photo.events %>
+		</ul>
+	</div>
+	<div class="section_container">
+		<div class="section_header">
+			<h5>This photo appears in:</h5>
+		</div>
+		<div class="section_content">
+			<ul class="photo_collections">
+				<% @photo.galleries.find(:all, :conditions => ["profile_pictures = ?", false], :order => "galleries.title ASC").each do |g| %>
+					<li class="clickable">
+						<%= link_to(g.title, user_gallery_path(g.user.permalink, g)) %>
+						<%= link_to(image_tag("woofunction-icons/close_16.png"), {:controller => "photos", :action => "remove_from_gallery", :gallery_id => g.id, :id => @photo.id}, {:class => "delete"}) if business_signed_in? %>
+						<div class="details" style="display:none;">
+							<div class="date"><%= g.created_at.strftime("#{e.commence_at.day.ordinalize} %b %Y") %></div>
+							<ul>
+								<% g.photos.find(:all, :limit => 5).each do |p| %>
+									<li class="photo"><%= image_tag(p.photo.url(:thumb)) %></li>
+								<% end %>
+							</ul>
+							<div class="photos_count"><%= pluralize(g.photos.size, 'photo') %></div>
+						</div>
+					</li>
+				<% end %>
+				<% @photo.events.find(:all, :order => "events.title ASC").each do |e| %>
+					<li class="clickable">
+						<%= link_to(e.title, venue_event_path(e.venue, e)) %>
+						<%= link_to(image_tag("woofunction-icons/close_16.png"), {:controller => "photos", :action => "remove_from_event", :event_id => e.id, :id => @photo.id}, {:class => "delete"}) if business_signed_in? %>
+						<div class="venue"><%= e.venue.name %></div>
+						<div class="details" style="display:none;">
+							<div class="date"><%= e.commence_at.strftime("#{e.commence_at.day.ordinalize} %b %Y") %></div>
+							<ul>
+								<% e.photos.find(:all, :limit => 5).each do |p| %>
+									<li class="photo"><%= image_tag(p.photo.url(:thumb)) %></li>
+								<% end %>
+							</ul>
+							<div class="photos_count"><%= pluralize(e.photos.size, 'photo') %></div>
+						</div>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+		<% end %>
+	</div>
+	<ul class="actions">
+		<!-- <li>Share</li> -->
+		<%= content_tag :li, link_to("Edit this Photo",  @edit_path) if business_signed_in? %>
+		<%= content_tag :li, link_to("Set as Profile Picture", :controller => "photos", :action => "set_profile_picture", :id => @photo)%>
+		<%= content_tag :li, link_to(image_tag("icons/photo_delete.png", :alt => "Remove from this Gallery (#{@photo.gallery.title})"), :controller => "photos", :action => "remove_from_gallery", :gallery_id => params[:id], :id => photo.id, :confirm => "Are you sure you want to remove this photo from this gallery?") if defined?(@photo.gallery) %>
+		<%= content_tag :li, link_to("Delete Photo", @delete_path, :method => :delete, :confirm => "Are you sure you want to delete this photo?") if business_signed_in? %>
+		<!-- <li>Report</li> -->
+	</ul>
+</div>
+<br	/>

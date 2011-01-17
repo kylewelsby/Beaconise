@@ -1,0 +1,10 @@
+Hello <%= @user.name unless @user.nil? %>,
+
+<%= yield %>
+
+Kind Regards
+The Beaconise Team
+
+
+_____
+You can control what messages you received from Beaconise in your messages preferences on <%= url_for(root_url)%>

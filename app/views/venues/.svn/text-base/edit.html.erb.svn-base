@@ -1,0 +1,5 @@
+<%# display_current_sub_nav %>
+<%# display_current_small_vcard %>
+<h1>Edit</h1>
+<%= render :partial => "form" %>
+<%= link_to "Permanently Delete Venue", delete_venue_path(@venue) if admin_signed_in? %>

@@ -1,0 +1,84 @@
+<%# display_current_sub_nav %>
+<%# display_current_small_vcard %>
+
+<div class="grid_8 alpha">
+	<div class="clearfix event_title">
+		<h1><%=h @event.title %></h1>
+		<h3><%= timeago(@event.commence_at) %></h3>
+	</div>
+	<div class="clearfix performances">
+		<ul>
+			<%= render @event.acts %>
+		</ul>
+	</div>
+	<hr/>
+	<% if @event.commence_at < Time.now %>
+		<div class="clearfix photos">
+
+			<ul class="photos" id="photos">
+				<% if @event.photos.size == 0 %>
+					<li class="photo">
+						<div class="emptyContent">
+							<h5>No Photos Yet</h5>
+							<p>No photos have been uploaded yet.</p>
+						</div>
+					</li>
+				<% end %>
+				<%= render :partial => @event.photos.find(:all, :limit => 8), :locals => {:event => @event} %>
+				<br class="clearit"/>
+			</ul>
+			<div class="more">
+			<% if @event.photos.size > 8 %>
+				<%= link_to(pluralize(@event.photos.size - 8, "more photo"), venue_event_photos_path(@event.venue, @event)) %>
+			<% else %>
+				<%= link_to("All photos", venue_event_photos_path(@event.venue, @event)) %>
+			<% end %>
+			</div>
+		</div>
+	<% end %>
+</div>
+<div class="grid_4 omega">
+	<div class="clearfix attendance">
+		<% if @event.commence_at > Time.now %>
+			<%= link_to("Attending", rsvp_venue_event_path(@event.venue,@event,:state => "attending"), :class => "link-button") %>
+			<%= link_to("Maybe",rsvp_venue_event_path(@event.venue,@event,:state => "maybe"), :class => "link-button") %>
+			<%= link_to("Not Attending",rsvp_venue_event_path(@event.venue,@event,:state => "not"), :class => "link-button") %>
+		<% else %>
+			<%= link_to("I was there", rsvp_venue_event_path(@event.venue,@event,:state => "was"), :class => "link-button") %>
+		<% end %>
+	</div>
+	<div class="clearfix location">
+		<div class="alpha grid_2">
+			<%= image_tag("http://maps.google.com/maps/api/staticmap?center=#{@event.venue.lat},#{@event.venue.lng}&zoom=14&size=140x110&maptype=roadmap&markers=color:red|size:tiny|#{@event.venue.lat},#{@event.venue.lng}&sensor=false") %>
+		</div>
+		<div class="grid_2 omega venue">
+			<h2><%= link_to(@event.venue.name, venue_path(@event.venue)) %></h2>
+			<address id="address"><%= @event.venue.full_address %></address>
+		</div>
+	</div>
+	<div class="clearfix tickets">
+		<% @event.prices.each do |price| %>
+			<%= number_to_currency(price.price, :unit => "&pound;") %>
+		<% end %>
+	</div>
+	<div class="clearfix promoter">
+		Hospital Records
+	</div>
+	<div class="clearfix source">
+		<h5>Event Sources</h5>
+		<%= tilllate_event_link(@event.tilllate_id) if @event.tilllate_id %>
+		<%= songkick_event_link(@event.songkick_id) if @event.songkick_id %>
+	</div>
+	<div class="clearfix actions">
+		<% if admin_signed_in? or business_signed_in? or promoter_signed_in? %>
+			<h3>Actions</h3>
+			<%= link_to("Edit Acts", acts_venue_event_path(@event.venue, @event), :class => "link-button edit") %>
+			<%= link_to("Settings", edit_venue_event_path(@event.venue, @event), :class => "link-button edit") %>
+			<%= link_to("Cancel", delete_venue_event_path(@event.venue, @event), :class => "link-button destroy") %>
+		<% end %>
+		<hr/>
+		<%= link_to "#{content_tag :span, "", :class => "block_img ICO_flag"} Flag a problem", flag_venue_event_path(@event.venue, @event) %>
+	</div>
+</div>
+
+<br class="clearfix"/>

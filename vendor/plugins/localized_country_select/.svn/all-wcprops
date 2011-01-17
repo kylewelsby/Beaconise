@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/README.rdoc
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/.gitignore
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/localized_country_select/uninstall.rb
+END

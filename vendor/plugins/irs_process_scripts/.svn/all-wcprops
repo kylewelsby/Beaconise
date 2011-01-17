@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/Rakefile
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/README
+END

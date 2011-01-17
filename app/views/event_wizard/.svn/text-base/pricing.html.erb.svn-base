@@ -1,0 +1,25 @@
+<% semantic_form_for @event, :url => {:action => :options} do |f| %>
+	<% @event.prices.build %>	
+	<%= f.error_messages %>
+	<section class="uiVerticalStep">
+		<% f.inputs :main_price, :for => :prices do |p| %>
+			<%= p.input :price %>
+		<% end %>
+		<% f.inputs :student_price, :for => :prices do |p| %>
+			<%= p.input :student, :as => :hidden, :value => true %>
+			<%= p.input :price, :label => true %>
+		<% end %>
+		<% f.inputs :member_price, :for => :prices do |p| %>
+			<%= p.input :member, :as => :hidden, :value => true %>
+			<%= p.input :price %>
+		<% end %>
+		<% f.inputs :women_price, :for => :prices do |p| %>
+			<%= p.input :female, :as => :hidden, :value => true %>
+			<%= p.input :price %>
+		<% end %>
+	</section>
+	
+	<% f.buttons do %>
+		<%= f.commit_button  %>
+	<% end %>
+<% end %>

@@ -1,0 +1,21 @@
+<fieldset><legend>Add into Gallery</legend>
+	<% f.fields_for :galleries do |g| %>
+		<div class="ctrlHolder">
+		<%= g.collection_select(:title, Gallery.find(:all, :conditions => {:user_id => current_user.id}), :id, :title) %>
+		<%= link_to_function("Create a new Gallery", :id => "create_new_gallery_link", :class => "clickDisplay") %>
+		</div>
+		<fieldset id="create_new_gallery" class="hide"><legend>Create a new Gallery</legend>
+			<div class="ctrlHolder">
+				<%# g.label :title, "Gallery Title"%>
+				<%# g.text_field :title %>
+			</div>
+			<div class="ctrlHolder">
+				<%# g.label :description %>
+				<%# g.text_area :description, :cols => 30, :rows => 4 %>
+				<div class="buttonHolder">
+					<button type="submit" class="primaryAction">Create Gallery</button>
+				</div>
+			</div>
+		</fieldset>
+	<% end %>
+</fieldset>

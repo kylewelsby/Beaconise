@@ -1,0 +1,5 @@
+<ul>
+<%- @venues.each do |venue| -%>
+	<%= content_tag :li, h(venue.name), :id => "venue_#{venue.id}" %>
+<%- end -%>
+</ul>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/README.rdoc
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/.gitignore
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/install.rb
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/recaptcha/uninstall.rb
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway/templates
+END
+gateway_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway/templates/gateway_test.rb
+END
+gateway.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway/templates/gateway.rb
+END
+remote_gateway_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway/templates/remote_gateway_test.rb
+END

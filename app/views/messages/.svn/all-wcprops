@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages/new.html.erb
+END
+_subnav.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages/_subnav.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages/show.html.erb
+END
+index.atom.builder
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages/index.atom.builder
+END
+_message.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/beaconise/!svn/ver/55/branches/v2_0/app/views/messages/_message.html.erb
+END

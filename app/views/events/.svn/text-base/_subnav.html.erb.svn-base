@@ -1,0 +1,18 @@
+<% @event ||= Event.find_by_id(params[:event_id]) %>
+<div>
+	<div id="secondaryNavigation">
+		<ul>
+			<%= content_tag :li, link_to("Event", venue_event_path(@event.venue, @event)) %>
+			<%= content_tag :li, link_to("Attending", attending_venue_event_path(@event.venue, @event) )%>
+			<%= content_tag :li, link_to("Photos", venue_event_photos_path(@event.venue, @event)) %>
+			<%= content_tag :li, link_to("Venue", venue_path(@event.venue)) %>
+			
+		</ul>
+		<% if admin_signed_in? or business_signed_in? or promoter_signed_in? %>
+		<ul>
+			<%= content_tag :li, link_to("Edit", edit_venue_event_path(@event.venue, @event)), :class => "edit" %>
+			<%= content_tag :li, link_to("Cancel", delete_venue_event_path(@event.venue, @event)), :class => "destroy" %>
+		</ul>
+		<% end %>
+	</div>
+</div>

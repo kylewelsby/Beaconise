@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/beaconise/!svn/ver/55/branches/v2_0/app/views/legal
+END
+security.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/legal/security.html.erb
+END
+code.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/beaconise/!svn/ver/55/branches/v2_0/app/views/legal/code.html.erb
+END
+terms.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/app/views/legal/terms.html.erb
+END
+privacy.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/legal/privacy.html.erb
+END

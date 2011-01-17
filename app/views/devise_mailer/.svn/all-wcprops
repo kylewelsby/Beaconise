@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/app/views/devise_mailer
+END
+reset_password_instructions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/beaconise/!svn/ver/55/branches/v2_0/app/views/devise_mailer/reset_password_instructions.html.erb
+END
+confirmation_instructions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/beaconise/!svn/ver/55/branches/v2_0/app/views/devise_mailer/confirmation_instructions.html.erb
+END
+unlock_instructions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/beaconise/!svn/ver/55/branches/v2_0/app/views/devise_mailer/unlock_instructions.html.erb
+END

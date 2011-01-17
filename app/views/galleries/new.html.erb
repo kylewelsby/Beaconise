@@ -1,0 +1,5 @@
+<%= display_current_sub_nav %>
+<%= display_current_small_vcard %>
+<% form_for @gallery, :url => {:action => :create} do |f| %>
+<%= render :partial => "form", :locals => {:f => f }%>
+<% end %>

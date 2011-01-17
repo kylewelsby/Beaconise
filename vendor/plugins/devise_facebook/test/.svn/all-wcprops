@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/test/test_helper.rb
+END
+devise_facebook_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/test/devise_facebook_test.rb
+END

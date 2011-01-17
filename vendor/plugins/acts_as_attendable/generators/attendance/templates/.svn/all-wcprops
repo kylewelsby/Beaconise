@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_attendable/generators/attendance/templates
+END
+create_attendees.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_attendable/generators/attendance/templates/create_attendees.rb
+END
+attendee.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_attendable/generators/attendance/templates/attendee.rb
+END

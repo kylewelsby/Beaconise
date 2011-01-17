@@ -1,0 +1,19 @@
+<div class="column_left">
+	<div class="column_left_content">
+		<h1>Promoters</h1>
+		<ul class="promoters">
+			<%= render :partial => @promoters %>
+		</ul>
+	</div>
+</div>
+<div class="column_right">
+	<%= content_tag(:div, link_to("Register as a new promoter", new_promoter_registration_path, :class => "link-button"), :class => "create_new_action_button") %>
+	<div class="section_container">
+		<div class="section_header">
+			<h3>About Promoters</h3>
+		</div>
+		<div class="section_content">
+			<p>This section is for event promoters, if you arrange events and wish to utilise the awesome tools of beaconise, register a new promoter now. </p>
+		</div>
+	</div>
+</div>

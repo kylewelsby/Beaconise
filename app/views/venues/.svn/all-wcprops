@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues
+END
+search.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/search.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/index.html.erb
+END
+_location.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_location.html.erb
+END
+404.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/404.html.erb
+END
+_venue_small.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_venue_small.html.erb
+END
+search.json.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/search.json.erb
+END
+tilllate.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/tilllate.html.erb
+END
+_venue_adv.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_venue_adv.html.erb
+END
+sync.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/sync.html.erb
+END
+map.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/map.html.erb
+END
+search.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/search.js.erb
+END
+OLD_show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/OLD_show.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/show.html.erb
+END
+_venue.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_venue.html.erb
+END
+times.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/times.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/edit.html.erb
+END
+details.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/details.html.erb
+END
+_vcard_small.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_vcard_small.html.erb
+END
+show.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/show.js.erb
+END
+connect.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/connect.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/new.html.erb
+END
+contact.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/contact.html.erb
+END
+_subnav.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_subnav.html.erb
+END
+_representative.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_representative.html.erb
+END
+redirect.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/redirect.html.erb
+END
+delete.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/delete.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/beaconise/!svn/ver/55/branches/v2_0/app/views/venues/_form.html.erb
+END

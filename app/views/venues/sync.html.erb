@@ -1,0 +1,31 @@
+<h1><%= title 'Sync Management' %></h1>
+Have you connected? <%= link_to("Connection Manager", connect_venue_path(@venue)) %>
+<hr/>
+<%= link_to_if((@venue.tilllate_id or @venue.songkick_id), "Start Synchronisation#{" <span class=\"worker\">(Syncing)</span>" if@jobs.size>0}", sync_venue_path(@venue, :start => true), :class => "link-button") %>
+<hr/>	
+<% @jobs.each do |j| %>
+	<%= timeago(j.updated_at,true) %> - <%= j.last_error %><br/>
+<% end %>
+<hr/>
+<h4>Event photos</h4>
+<ul>
+<% @venue.events.each do |event| %>
+	<li>
+		<h4><%= link_to("#{timeago(event.commence_at)} #{event.title}", venue_event_path(@venue, event))%></h4>
+		<div>
+			<% if event.tilllate_id and event.songkick_id %>
+				Connected with <%= tilllate_event_link(event.tilllate_id) %> and <%= songkick_event_link(event.songkick_id) %>
+			<% elsif event.tilllate_id %>
+				Connected with <%= tilllate_event_link(event.tilllate_id) %>
+			<% elsif event.songkick_id %>
+				Connected with <%= songkick_event_link(event.songkick_id) %>
+			<% else %>
+				Not Connected with external sites.
+			<% end %>
+		</div>
+		<div><%= link_to("Get Photo from TillLate", sync_venue_event_path(@venue, event, :service => "tilllate")) if event.tilllate_id and event.finish_at < Time.now %></div>
+		<hr/>
+	</li>
+		
+<% end %>
+<ul>

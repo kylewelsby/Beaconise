@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test
+END
+time_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test/time_test.rb
+END
+schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test/schema.rb
+END
+abstract_unit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test/abstract_unit.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test/database.yml
+END
+date_time_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test/date_time_test.rb
+END
+date_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/validates_date_time/test/date_test.rb
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/test/remote/integrations
+END
+remote_paypal_integration_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/test/remote/integrations/remote_paypal_integration_test.rb
+END
+remote_gestpay_integration_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/test/remote/integrations/remote_gestpay_integration_test.rb
+END

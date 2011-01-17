@@ -1,0 +1,59 @@
+/* @override http://beaconise.local/stylesheets/jquery.ui.datetimepicker.css */
+
+#ui-datetimepicker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+}
+
+.ui-timepicker {
+	border: 1px solid #aaa;
+	padding: 2px;
+	margin-left: 3px;
+	margin-right: -6px;
+	float: left;
+	font: 100% "Lucida Grande", Lucida, Verdana, sans-serif;
+	background-color: white;
+}
+
+.ui-timepicker-title {
+	font-size: 100%;
+	text-align: center;
+	white-space: nowrap;
+	padding: 5%;
+}
+
+.ui-timepicker table thead tr th {
+	border-style: none;
+	border-width: 0;
+	font-size: 85.73%;
+}
+
+.ui-timepicker table tbody tr td {
+	border-style: none;
+	border-width: 0;
+}
+
+.ui-timepicker table {
+	height: 119px;
+	margin-bottom: 10%;
+	border-style: none;
+	border-width: 0;
+	width: 100%;
+}
+
+.ui-timepicker .ui-slider-vertical {
+	height: 100%;
+}
+
+.ui-timepicker .ui-slider-handle {
+	padding: 0;
+	cursor:pointer;
+}
+
+.ui-datepicker {
+	font-size: 85.73%;
+	position: relative;
+	float: left;
+}

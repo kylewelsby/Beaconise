@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/mimetype-fu/spec/fixtures
+END
+file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/mimetype-fu/spec/fixtures/file.rb
+END
+file.unknown
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/mimetype-fu/spec/fixtures/file.unknown
+END
+file.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/mimetype-fu/spec/fixtures/file.jpg
+END

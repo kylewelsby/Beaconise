@@ -1,0 +1,25 @@
+<%= display_current_sub_nav %>
+<%= display_current_small_vcard %>
+<h2>Galleries</h2>
+<% if @galleries.nil? and @photos.nil? and (defined?(@user) and @user.id != current_user.id) %>
+	<div class="empty_section">
+		<h5>No Photos or Galleries</h5>
+		<p>There are no photos or galleries to display.</p>
+		<%= content_tag :p, link_to("Create a new gallery and upload photos", :action => "new") if (defined?(@user) and @user.id == current_user.id) %>
+	</div>
+<% else %>
+	<ul id="photos" class="photos">
+		<%= render @photos %>
+		<br class="clearit"/>
+	</ul>
+	<%= will_paginate @photos %>
+	<ul class="galleries">
+		<%= render @galleries %>
+		<br class="clearit"/>
+	</ul>
+	<% if !@user.nil? and !current_user.nil? and @user.id == current_user.id %>
+		<% form_for Gallery.new, :url => user_galleries_path do |f| %>
+		<%= render :partial => "form", :locals => {:f => f }%>
+		<% end %>
+	<% end %>
+<% end %>

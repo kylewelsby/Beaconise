@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/beaconise/!svn/ver/55/branches/v2_0/test/fixtures/notifier
+END
+password_reset_instructions
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/beaconise/!svn/ver/55/branches/v2_0/test/fixtures/notifier/password_reset_instructions
+END
+passwordResetInstructions
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/test/fixtures/notifier/passwordResetInstructions
+END
+welcome
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/test/fixtures/notifier/welcome
+END

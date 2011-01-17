@@ -1,0 +1,6 @@
+<li id="comment_<%= comment.id %>" class="comment">
+	<%= link_to image_tag(get_profile_picture(comment.user, :thumb)) + get_profile_name(comment.user), user_path(comment.user) %>
+	<div class="comment_text"><%= h(comment.comment) %></div>
+	<div class="date"><%= datetime_ago(comment.created_at) %></div>
+	<%= link_to("#{image_tag("woofunction-icons/comment_user_close_32.png")}", comment_path(comment), :confirm => "Are you sure you want to remove this comment?", :class => "rjs-delete delete", :onclick => "return false;") if owner_or_admin(comment) %>
+</li>

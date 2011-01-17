@@ -1,0 +1,28 @@
+<% semantic_form_for @user do |f| %>
+	<%= f.error_messages %>
+	<% f.inputs :name => "Signup" do %>
+		<%= f.input :login %>
+		<%= f.input :name, :label => "First name" %>
+		<%= f.input :surname %>
+		<%= f.input :email %>
+		<%= f.input :date_of_birth,
+					:start_year => (Date.today.year - 8), 
+					:end_year => (Date.today.year - 120), 
+					:default => (18.years.ago),
+					:order => [:day, :month, :year] %>
+		<%= f.input :gender, :as => :radio, :collection => ["Male","Female"] %>
+		<%= f.input :password %>
+		<%= f.input :password_confirmation, :label => "Password confirm" %>
+	<% end %>
+	<% f.inputs :name => "Security Check" do %>
+		<script type="text/javascript" charset="utf-8">
+			var RecaptchaOptions = {
+			   theme : 'clean'
+			};
+		</script>
+		<%= recaptcha_tags %>
+	<% end %>
+	<% f.buttons do %>
+		<%= f.commit_button "Signup" %>
+	<% end %>
+<% end %>

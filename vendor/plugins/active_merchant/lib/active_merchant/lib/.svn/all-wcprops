@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib
+END
+validateable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/validateable.rb
+END
+post_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/post_data.rb
+END
+connection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/connection.rb
+END
+utils.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/utils.rb
+END
+posts_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/posts_data.rb
+END
+requires_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/requires_parameters.rb
+END
+country.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/country.rb
+END
+error.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/lib/error.rb
+END

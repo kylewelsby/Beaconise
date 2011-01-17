@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/beaconise/!svn/ver/55/branches/v2_0/script/performance
+END
+benchmarker
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/script/performance/benchmarker
+END
+profiler
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/beaconise/!svn/ver/55/branches/v2_0/script/performance/profiler
+END
+request
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/beaconise/!svn/ver/55/branches/v2_0/script/performance/request
+END

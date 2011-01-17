@@ -1,0 +1,19 @@
+<%= f.error_messages %>
+<fieldset id="create_new_gallery"><legend>Create a new Gallery</legend>
+	<div class="ctrlHolder">
+		<%= f.label :title, "Gallery Title"%>
+		<%= f.text_field :title %>
+	</div>
+	<div class="ctrlHolder">
+		<%= f.label :description %>
+		<%= f.text_area :description, :cols => 30, :rows => 4 %>
+	</div>
+	<div class="ctrlHolder">
+		<%= f.label :location %>
+		<%= f.text_field :location, :class => "textInput" %>
+	</div>
+</fieldset>
+<div class="buttonHolder">
+	<button type="submit" class="primaryAction">Create Gallery</button>
+	<br/>
+</div>

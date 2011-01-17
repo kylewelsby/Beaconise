@@ -1,0 +1,51 @@
+<div class="grid_8 alpha">
+	<div class="venue_events clearfix">
+		<ul class="events_days clearfix">
+			<% @events.sort.each do |day,events| %>
+				<li class="event_day clearfix">
+					<h2>
+						<div class="datetime"><%= timeago(day, false) %></div>
+					</h2>
+					<ul class="events clearfix">
+						<%= render :partial => events %>
+					</ul>
+				</li>
+			<% end %>
+		</ul>
+		<div class="more">
+			<% if @events_count.size > 7 %>
+				<%= link_to(pluralize(@events_count.count - 7, "more upcoming events"), venue_events_path(@venue)) %>
+			<% else %>
+				<%= link_to("All events", venue_events_path(@venue)) %>
+			<% end %>
+		</div>
+	</div>
+	<hr/>
+</div>
+<div class="grid_4 omega">
+	<div class="info clearfix">
+		<%= image_tag(@venue.logo.url) if @venue.logo_file_name %>
+		<h2 class="title"><%= @venue.name %> (<%= @venue.city %>)</h2>
+		<% if @venue.address1 %>
+			<% content_tag(:address) do %>
+				<%= content_tag(:div, @venue.address1) %>
+				<%= content_tag(:div, @venue.address2) if @venue.address2 %>
+				<% content_tag :div do %>
+					<%= @venue.city %>
+					<%= @venue.postcode %>
+				<% end %>
+			<% end %>
+		<% end %>
+		<hr/>	
+		<%= content_tag(:div, @venue.telephone) if @venue.telephone %>
+		<%= content_tag(:div, @venue.website) if @venue.website %>
+	</div>
+	<div class="map clearfix">
+		<%= link_to(image_tag("http://maps.google.com/maps/api/staticmap?center=#{@venue.lat},#{@venue.lng}&zoom=14&size=300x200&maptype=roadmap&markers=color:red|size:tiny|#{@venue.lat},#{@venue.lng}&sensor=false"), map_venue_path(@venue)) %>
+		<%= link_to("Get Directions", map_venue_path(@venue))%>
+	</div>
+	<div class="actions clearfix">
+		<%= link_to("Preferences", edit_venue_path(@venue), :class => "link-button") %>
+		<%= link_to("Sync", sync_venue_path(@venue), :class => "link-button")%>
+	</div>
+</div>

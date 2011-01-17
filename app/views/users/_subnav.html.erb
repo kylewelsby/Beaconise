@@ -1,0 +1,20 @@
+<% @user ||= User.find_by_permalink(params[:user_id]) %>
+<div>
+	<div id="secondaryNavigation">
+		<ul>
+			<%= content_tag :li, link_to("Wall", user_path(@user)) %>
+			<%= content_tag :li, link_to("Details", :controller => "users", :action => "details", :id => @user.permalink) %>
+			<%= content_tag :li, link_to("Message", :controller => "users", :action => "contact", :id => @user.permalink) %>
+			<%# content_tag :li, link_to("Events", user_events_path(@user)) %>
+			<%= content_tag :li, link_to("Photos", user_galleries_path(@user)) %>
+			<% if user_signed_in? and (current_user == @user or defined?(current_user_id_admin?)) %>
+				<%= content_tag :li, link_to("Edit", edit_registration_path(@user)), :class => "edit" %>
+			<% end %>
+		</ul>
+		<% if admin_signed_in? %>
+		<ul>
+			<%= content_tag :li, link_to("Suspend Member", {:controller => "users", :action => "destroy", :id => @user, :reason => "suspended"}, :method => :delete, :confirm => "Are you sure you want to delete #{@user.login}?\n\nA email notification will be sent out.") %>
+		</ul>
+		<% end %>
+	</div>
+</div>

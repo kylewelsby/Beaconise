@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/rockstar/test/fixtures/xml/geo
+END
+getevents_location_london.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/rockstar/test/fixtures/xml/geo/getevents_location_london.xml
+END
+getmetros_country_germany.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/rockstar/test/fixtures/xml/geo/getmetros_country_germany.xml
+END

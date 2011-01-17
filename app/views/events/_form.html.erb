@@ -1,0 +1,112 @@
+<%= f.error_messages %>
+<section id="event_venue" class="uiVerticalStep">
+	<ul id="event_venue_selected" class="<%= "clear " unless @venue %>selectedValues clearfix">
+		<%= render @venue if @venue %>
+		&nbsp;
+	</ul>
+	<% unless @venue %>
+	<div id="event_venue_select">
+		<% f.inputs do %>
+			<%= f.input :venue, :as => :autocomplete %>
+		<% end %>
+		<% f.inputs :for => :venue, :id => "event_new_venue" do |v| %>
+			<%= v.input :name %>
+			<%= v.input :address1 %>
+			<%= v.input :address2 %>
+			<%= v.input :city %>
+			<%= v.input :county %>
+			<%= v.input :country %>
+		<% end %>
+	</div>
+	<% end %>
+	
+</section>
+<section id="event_datetime" class="uiVerticalStep">
+	<% f.inputs :id => "event_datetime_select" do %>
+		<%= f.input :commence_at, :as => :datepicker, :minute_step => 15 %>	
+		<%= f.input :finish_at, :as => :datepicker, :minute_step => 15 %>
+	<% end %>
+</section>
+
+<section id="event_price" class="uiVertialStep">
+	<h3>How Much?</h3>
+	<% f.inputs :id => "event_price_select" do %>
+		<%= f.input :price %>
+		<%= f.input :avalable_tickets %>
+	<% end %>
+	<% f.inputs :for => :prices, :id => "event_price_extra_select", :class => "clear" do |p|%>
+		<%= p.input :price %>
+		<%= p.input :member %>
+		<%= p.input :student %>
+		<%= p.input :female, :as => :select, :collection => [["No",false],["Yes",true]] %>
+		<%# p.input :commence_at %>
+		<%# p.input :finish_at %>
+	<% end %>
+</section>
+<section id="event_poster" class="uiVerticalStep">
+	<h3>Poster</h3>
+	<% f.inputs :id => "event_poster_select" do %>
+		<%= f.input :poster %>
+	<% end %>
+</section>
+<% f.buttons do %>
+	<%= f.commit_button %>
+<% end %>
+
+<% content_for(:foot) do %>
+	<%= javascript_include_tag('jquery.datetime') %>
+	<script>
+		jQuery(document).ready(function($){
+			
+			$("#event_new_venue").hide();
+			
+			var dates = $("input.ui-datepicker").datetimepicker({
+				inline:true,
+				defaultDate:"+1w",
+				dateFormat:"yy-mm-dd",
+				showOtherMonths:true,
+				selectOtherMonths:true,
+				minEl:$('input.ui-datepicker')[0],
+				maxEl:$('input.ui-datepicker')[1]
+			});
+			
+			// $(".ui-datepicker .ui-widget").prepend(
+			// 	$('<div class="ui-timepicker-sliders">')
+			// )
+			
+			
+			$("#event_venue_autocomplete_input").autocomplete({
+				serviceUrl : '<%= search_venues_path(:json) %>',
+				minChars:2,
+				deferRequestBy:250,
+				maxHeight:400,
+				width:300,
+				zIndex:999,
+				onSelect: function(value,data){
+					$("#event_venue_id_input").val(data["venue"]["id"]);
+					$("#event_venue_selected").html(data["venue"]["html"])
+						.append(
+							$('<span class="hoverPop">Click to change</span>').hide()
+						)
+						.mouseenter(function(){
+							$(this).find(".hoverPop").fadeIn();
+						})
+						.mouseleave(function(){
+							$(this).find(".hoverPop").fadeOut();
+						})
+						.click(function(){
+							$("#event_venue_selected").slideUp().html("");
+							$("#event_venue_autocomplete_input").val('');
+							$("#event_venue_select").slideDown();
+						})
+						.hide()
+						.removeClass('clear')
+						.slideDown();
+					$("#event_venue_select").slideUp();
+					
+				}
+			});
+	
+		});
+	</script>
+<% end %>

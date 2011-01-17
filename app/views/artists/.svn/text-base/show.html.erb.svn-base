@@ -1,0 +1,24 @@
+<div class="column_left">
+	<div class="column_left_content">
+		<h1><%= @artist.name %></h1>
+		<% if @artist_lastfm['bio_summary'] %>
+		<div class="description">
+			<%= @artist_lastfm['bio_summary'] %>
+			<small class="cited">sourced from <%= link_to "last.fm", @artist_lastfm['url'], :target => :blank %></small>
+		</div>
+		<% end %>
+		<div class="section_container">
+			<div class="section_header">
+				<h3><%= @artist.name %> is listed in <%= pluralize(@artist.events.size, "beaconise Events") %></h3>
+			</div>
+			<div class="section_content">
+				<ul class="events">
+					<%= render @artist.events %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="column_right">
+	<%= image_tag(@artist_lastfm['large_image']) if @artist_lastfm['large_image'] %>
+</div>

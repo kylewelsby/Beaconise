@@ -1,0 +1,2 @@
+<h1>New Venue</h1>
+<%= render :partial => "form" %>

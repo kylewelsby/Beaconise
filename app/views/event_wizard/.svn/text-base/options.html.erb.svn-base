@@ -1,0 +1,12 @@
+<% semantic_form_for @event, :url => {:action => :options} do |f| %>
+	<%= f.error_messages %>
+	<section class="uiVerticalStep">
+		<% f.inputs :poster do %>
+			<%= f.input :poster %>
+		<% end %>
+	</section>
+	
+	<% f.buttons do %>
+		<%= f.commit_button  %>
+	<% end %>
+<% end %>

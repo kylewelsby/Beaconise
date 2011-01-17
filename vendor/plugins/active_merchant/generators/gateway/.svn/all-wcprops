@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway
+END
+USAGE
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway/USAGE
+END
+gateway_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/generators/gateway/gateway_generator.rb
+END

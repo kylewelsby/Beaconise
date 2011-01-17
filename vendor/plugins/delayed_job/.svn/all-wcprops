@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job
+END
+delayed_job.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/delayed_job.gemspec
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/init.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/MIT-LICENSE
+END
+README.textile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/README.textile
+END

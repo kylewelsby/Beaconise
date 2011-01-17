@@ -1,0 +1,8 @@
+<%= display_current_sub_nav %>
+<h3>Attending</h3>
+<%= pluralize(@event.attending.count(:all, :conditions => {:state => :attending}), "person attending", "people attending") %>
+<ul class="members">
+<% @event.attending.find(:all, :conditions => {:state => :attending}).each do |attend| %>
+	<%= render :partial => "users/user", :object => attend.user %>
+<% end %>
+</ul>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/lib/delayed
+END
+performable_method.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/lib/delayed/performable_method.rb
+END
+worker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/lib/delayed/worker.rb
+END
+job.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/lib/delayed/job.rb
+END
+message_sending.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/delayed_job/lib/delayed/message_sending.rb
+END

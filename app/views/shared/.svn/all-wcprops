@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/beaconise/!svn/ver/55/branches/v2_0/app/views/shared
+END
+_login_required.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/beaconise/!svn/ver/55/branches/v2_0/app/views/shared/_login_required.html.erb
+END
+_devise_links.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/app/views/shared/_devise_links.erb
+END

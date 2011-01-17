@@ -1,0 +1,7 @@
+<h1>Members</h1>
+<p>List of members on Raidr</p>
+<% if !@users.nil? %>
+	<%= content_tag :ul, render(:partial => @users), :id => "users" %>
+<% else %>
+	<p class="noresults">Can't find any users</p>
+<% end %>

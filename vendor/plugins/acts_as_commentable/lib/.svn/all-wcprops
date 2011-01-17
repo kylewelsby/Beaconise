@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_commentable/lib
+END
+acts_as_commentable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_commentable/lib/acts_as_commentable.rb
+END
+comment_methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_commentable/lib/comment_methods.rb
+END
+commentable_methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/acts_as_commentable/lib/commentable_methods.rb
+END

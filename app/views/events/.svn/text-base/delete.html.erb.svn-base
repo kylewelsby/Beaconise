@@ -1,0 +1,12 @@
+<%= display_current_sub_nav %>
+<%# display_current_small_vcard %>
+
+<% semantic_form_for @event, :url => venue_event_path(@event.venue, @event) do |f| %>
+	<% f.inputs :name => "Cancel Event" do %>
+		<%= f.input :canceled_reason %>
+		<%= f.input :canceled_at, :value => Time.now, :as => :hidden %>
+		<% f.buttons do %>
+			<%= f.commit_button "Cancel Event" %>
+		<% end %>
+	<% end %>
+<% end %>

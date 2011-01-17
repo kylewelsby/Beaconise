@@ -1,0 +1,7 @@
+<li class="gallery clickable">
+	<div class="photo_front"><%= image_tag(gallery.photos.first.photo(:album)) if gallery.photos.size > 0 %></div>
+	<div class="title"><%= link_to(gallery.title, user_gallery_path(params[:user_id], gallery)) %></div>
+	<div class="details" style="display:none;">
+		<div class="photos_count"><%= pluralize(gallery.photos.size, "photo") %></div>
+	</div>
+</li>

@@ -1,0 +1,6 @@
+<% @venue ||= Venue.find_by_permalink(params[:venue_id]) %>
+<%= content_tag :div, link_to(image_tag(@venue.logo(:avatar), :class => "avatar", :title => @venue.name) + @venue.name, venue_path(@venue)), :class => "venue_small" %>
+
+<%= @venue.logo(:avatar).url %>
+
+<p>venue</p>

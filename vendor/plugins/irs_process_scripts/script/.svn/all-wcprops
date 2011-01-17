@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/script
+END
+spawner
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/script/spawner
+END
+inspector
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/script/inspector
+END
+reaper
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/irs_process_scripts/script/reaper
+END

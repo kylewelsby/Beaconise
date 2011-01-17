@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/beaconise/!svn/ver/55/branches/v2_0/script/process
+END
+spawner
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/beaconise/!svn/ver/55/branches/v2_0/script/process/spawner
+END
+inspector
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/beaconise/!svn/ver/55/branches/v2_0/script/process/inspector
+END
+reaper
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/beaconise/!svn/ver/55/branches/v2_0/script/process/reaper
+END

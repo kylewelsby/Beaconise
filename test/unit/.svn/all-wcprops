@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/beaconise/!svn/ver/55/branches/v2_0/test/unit
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/user_test.rb
+END
+notifier_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/notifier_test.rb
+END
+event_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/event_test.rb
+END
+venue_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/venue_test.rb
+END
+message_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/message_test.rb
+END
+users_venues_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/users_venues_test.rb
+END
+photo_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/photo_test.rb
+END
+gallery_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/gallery_test.rb
+END
+venue_events_job_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/venue_events_job_test.rb
+END
+genre_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/genre_test.rb
+END
+venue_time_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/venue_time_test.rb
+END
+event_price_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/event_price_test.rb
+END
+artist_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/artist_test.rb
+END
+promoter_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/promoter_test.rb
+END
+act_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/act_test.rb
+END
+event_job_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/beaconise/!svn/ver/55/branches/v2_0/test/unit/event_job_test.rb
+END

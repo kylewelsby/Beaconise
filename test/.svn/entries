@@ -1,0 +1,77 @@
+10
+
+dir
+55
+http://kyle%40beaconise.com@svn.mekyle.com/beaconise/branches/v2_0/test
+http://kyle%40beaconise.com@svn.mekyle.com/beaconise
+
+
+
+2010-09-15T20:37:04.504556Z
+55
+kyle@beaconise.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8dd6c11d-d6c4-4871-9540-0f0745aa6b94
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2011-01-17T09:21:15.000000Z
+e297614c72684d065aef001f86188732
+2010-09-15T20:37:04.504556Z
+55
+kyle@beaconise.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1800
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

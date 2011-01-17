@@ -1,0 +1,4 @@
+<% @artists.each do |artist| %>
+	<%= artist.name %> - <%= link_to(artist.mbid, "http://musicbrainz.org/show/artist/?mbid=#{artist.mbid}") %> <%= link_to("BBC", "http://www.bbc.co.uk/music/artists/#{artist.mbid}")%>
+	<hr/>
+<% end %>

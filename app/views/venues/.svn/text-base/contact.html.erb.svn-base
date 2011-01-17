@@ -1,0 +1,62 @@
+<% content_for(:head) do %>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=<%= ENV["GOOGLE_MAPS_KEY"] %>" type="text/javascript"></script>
+<% end %>
+
+<%= render :partial => "subnav" %>
+<%= render :partial => "vcard_small", :locals => {:venue => @venue} %>
+<h2>Contact</h2>
+<div id="map_canvas" style="width:100%; height:300px; overflow:hidden;">&nbsp;</div>
+<script type="text/javascript" charset="utf-8">
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map_canvas"));
+		var geocoder = new GClientGeocoder();
+		geocoder.getLatLng("<%= @venue.address_line_1 %>, <%= @venue.address_line_1 %>, <%= @venue.address_town %>, <%= @venue.address_county %>, <%= @venue.address_postcode %>, UK",
+		function(point) {
+			if (!point) {
+				alert("location not found");
+			} else {
+				map.setCenter(point, 13);
+				var marker = new GMarker(point);
+				map.addOverlay(marker);
+				// marker.openInfoWindowHtml(address);
+			}
+		});
+	}
+	$("#map_canvas").corners();
+</script>
+<h3>Address</h3>
+<div class="column_left">
+	<div class="column_left_content">
+		<address>
+			<%= content_tag :p, @venue.address_line_1 %>
+			<%= content_tag :p, @venue.address_line_2 unless @venue.address_line_2.nil? %>
+			<%= content_tag :p, @venue.address_town %>
+			<%= content_tag :p, @venue.address_county %>
+			<%= content_tag :p, @venue.address_country %>
+			<%= content_tag :p, @venue.address_postcode %>
+		</address>
+	</div>
+</div>
+<div class="column_right">
+	<ul>
+		<%= render :partial => "representative", :collection => @venue.users %>
+	</ul>
+</div>
+<!-- <hr class="clearit"/>
+<div class="direct_message">
+	<h3>Send Direct Message</h3>
+	<% if logged_in? %>
+		<% form_for :message, :controller => "messages", :action => "send" do |f| %>
+		<div>{users_view_small}</div>
+		<div class="ctrlHolder">
+			<%= f.label :message %>
+			<%= f.text_area :message, :cols => "50", :rows => "5", :class => "textInput" %>
+		</div>
+		<div class="buttons">
+			<button type="submit" class="rounded">Send</button>
+		</div>
+		<% end %>
+	<% else %>
+		<%= render :partial => "shared/login_required"%>
+	<% end %>
+</div> -->

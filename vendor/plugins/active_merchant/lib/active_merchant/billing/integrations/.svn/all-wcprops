@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations
+END
+two_checkout.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/two_checkout.rb
+END
+return.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/return.rb
+END
+bogus.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/bogus.rb
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/helper.rb
+END
+hi_trust.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/hi_trust.rb
+END
+chronopay.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/chronopay.rb
+END
+nochex.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/nochex.rb
+END
+quickpay.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/quickpay.rb
+END
+notification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/notification.rb
+END
+paypal.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/paypal.rb
+END
+action_view_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/action_view_helper.rb
+END
+gestpay.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/gestpay.rb
+END

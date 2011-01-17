@@ -1,0 +1,17 @@
+<h2>Sign in</h2>
+<!-- <fb:login-button size="medium" length="large" v="2" display="popup" perms="publish_stream,rsvp_event,email,offline_access,user_location" autologoutlink="1"></fb:login-button> -->
+<%= facebook_sign_in_link(:user, {:size => :medium, :length => :large, :v => 2, :display => :popup, :perms => "publish_stream,rsvp_event,email,offline_access"}) %>
+
+<% semantic_form_for resource, :url => session_path(resource_name) do |f| %>
+	<% f.inputs :sign_in do %>
+		<%= f.input :email %>
+		<%= f.input :password %>
+		<%= f.input :remember_me, :as => :boolean %>
+	<% end %>
+	<% f.buttons do %>
+		<%= f.commit_button %>
+	<% end %>
+<% end %>
+
+
+<%= render :partial => "shared/devise_links" %>

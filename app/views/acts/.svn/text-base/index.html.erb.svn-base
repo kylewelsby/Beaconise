@@ -1,0 +1,4 @@
+<%= link_to("back to event", venue_event_path(@event.venue, @event) )%>
+<ul>
+	<%= render @event.acts %>
+</ul>

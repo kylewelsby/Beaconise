@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/beaconise/!svn/ver/55/branches/v2_0/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/beaconise/!svn/ver/55/branches/v2_0/script/console
+END
+cucumber
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/beaconise/!svn/ver/55/branches/v2_0/script/cucumber
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/beaconise/!svn/ver/55/branches/v2_0/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/beaconise/!svn/ver/55/branches/v2_0/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/beaconise/!svn/ver/55/branches/v2_0/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/beaconise/!svn/ver/55/branches/v2_0/script/runner
+END
+spin
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/beaconise/!svn/ver/55/branches/v2_0/script/spin
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/beaconise/!svn/ver/55/branches/v2_0/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/beaconise/!svn/ver/55/branches/v2_0/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/beaconise/!svn/ver/55/branches/v2_0/script/plugin
+END

@@ -1,0 +1,15 @@
+<%= render :partial => "subnav" %>
+<%= render :partial => "vcard_small", :locals => {:venue => @venue} %>
+<div>
+		<h2>Details</h2>
+		<p style="color:red">This page is not configurable yet. </p>
+		<p>The following features may be available soon. </p>
+		<ul>
+			<li>Venue Trade Times</li>
+			<li>Product Listings</li>
+			<li>Music Genres</li>
+			<li>Dress Code</li>
+			<li>Staff Count</li>
+			<li>Capacity</li>
+		</ul>
+</div>

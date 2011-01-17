@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/beaconise/!svn/ver/55/branches/v2_0/app/views/comments
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/beaconise/!svn/ver/55/branches/v2_0/app/views/comments/create.js.erb
+END
+_show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/comments/_show.html.erb
+END
+_comment.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/beaconise/!svn/ver/55/branches/v2_0/app/views/comments/_comment.html.erb
+END
+destroy.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/beaconise/!svn/ver/55/branches/v2_0/app/views/comments/destroy.js.erb
+END

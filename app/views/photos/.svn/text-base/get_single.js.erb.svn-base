@@ -1,0 +1,6 @@
+$("#photos li.photo:first-child").before("<%= escape_javascript(render(:partial => @photo, :locals => {:gallery => @gallery, :event => @event})) %>").fadeIn("slow");
+<% if !@photo_count.nil? %>
+	// $("#photos_count").html("<%= pluralize(@photo_count, 'Photo') %>").effect("highlight", {}, 3000);
+	$("#photos_count").html("<%= pluralize(@photo_count, 'Photo') %>")
+	$("#photos li.emptyContent").hide();
+<% end %>

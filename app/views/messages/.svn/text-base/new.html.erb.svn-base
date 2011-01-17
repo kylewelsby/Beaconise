@@ -1,0 +1,23 @@
+<%= display_current_sub_nav %>
+<% form_for @message do |f| %>
+	<fieldset><legend>Compose Message</legend>
+		<%= f.error_messages %>
+		<div class="ctrlHolder">
+			<%= f.label :recipient %>
+			<%= f.text_field :recipient,
+			:class => "autocomplete", "autocomplete_url" => autocomplete_for_user_name_users_path, :value => @message.recipient %>
+		</div>
+		<div class="ctrlHolder">
+			<%= f.label :subject %>
+			<%= f.text_field :subject %>
+		</div>
+		<div class="ctrlHolder">
+			<%= f.label :body, "Message" %>
+			<%= f.text_area :body, :rows => 10, :cols => 50 %>
+		</div>
+		<div class="buttonHolder">
+			<button type="submit" class="primaryAction">Send</button>
+			<br/>
+		</div>
+	</fieldset>
+<% end %>

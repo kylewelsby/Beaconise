@@ -1,0 +1,170 @@
+/* @override http://beaconise.local/stylesheets/formtastic_changes.css */
+
+/* -------------------------------------------------------------------------------------------------
+
+Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+For example, to make the inline hint paragraphs a little darker in color than the standard #666:
+
+form.formtastic fieldset ol li p.inline-hints { color:#333; }
+
+--------------------------------------------------------------------------------------------------*/
+
+form.formtastic fieldset ol li p.inline-hints { color: #919191;
+	font-style: italic;
+	font-size: .9em;
+}
+
+form.formtastic fieldset.buttons input, a.link-button {
+	padding: 2px 12px 3px;
+	/*-moz-border-radius-bottomleft:14px;*/
+	-moz-border-radius-bottomright:8px;
+	-moz-border-radius-topleft:8px;
+	/*-moz-border-radius-topright:14px;*/
+	/*-webkit-border-bottom-left-radius:14px;*/
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-top-left-radius:8px;
+	/*-webkit-border-top-right-radius:14px;*/
+	position: relative;
+	background: #D9D9D9 url(/images/ui/button_repeat.png) repeat-x 0 -15px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	color: #333 !important;
+	display: inline-block;
+	text-shadow: #fefefe 1px 1px 0;
+}
+
+form.formtastic fieldset.inputs input, form.formtastic fieldset.inputs textarea, form.formtastic fieldset.inputs select {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-box-sizing: border-box;
+	
+	-webkit-background-clip: border;
+	-webkit-background-origin: padding;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-box-sizing: border-box;
+	background: #f4f4f4 url(/images/ui/button_repeat.png) repeat-x 0 -1200px;
+	border: 1px solid #ccc;
+	padding: 3px 0 3px 3px;
+	color: #333;
+}
+
+form.formtastic fieldset.inputs>legend {
+	font-size: 28px;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+form.formtastic fieldset.inputs legend span {
+	display: block;
+	border-bottom: 1px dotted #cacaca;
+	padding-bottom: 5px;
+}
+
+form.formtastic fieldset.inputs span.label {
+	font-size: 14px;
+	border-bottom-style: none;
+}
+
+form.formtastic fieldset.buttons {
+}
+
+form.formtastic fieldset.buttons li.commit {
+	float: right;
+}
+
+form#new_user {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+form.formtastic div#recaptcha_area{
+	margin-bottom: 10px;
+}
+
+form.formtastic div#recaptcha_area table {
+	width: 100%;
+}
+
+form#new_user_session {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Changes in 2010 */
+
+form.search {
+	position: relative;
+}
+
+form.search .inputs ol li {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+}
+
+form.search .inputs ol li input {
+	width: 100% !important;
+}
+
+form.search .buttons ol li  {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+form.search .buttons ol li input {
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	text-indent: -999px;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 10px;
+	border-style: none;
+	background: url(../images/ui/ICOSearch_small.png) no-repeat center center;
+	cursor: pointer;
+}
+
+form.formtastic fieldset ol li.date_picker fieldset ol li {
+	float: left;
+	width: auto;
+	margin: 0 .3em 0 0;
+	padding: 0;
+}
+
+form.formtastic fieldset ol li.date_picker fieldset ol li label {
+	display: none;
+}
+
+form.formtastic fieldset ol li.date_picker fieldset ol li label input{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+form.formtastic fieldset ol li fieldset legend.label label{
+	width: 100%;
+}
+
+/* @group Autocomplete */
+
+div.autocomplete-w1 { background:url(/images/shadow.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+div.autocomplete { background:#FFF; cursor:default; text-align:left; max-height:350px; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden;
+	border: 1px solid #ccc;
+}
+div.autocomplete .selected { background:#F0F0F0; }
+div.autocomplete div { padding:2px 5px; white-space:nowrap; }
+div.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+
+
+/* @end */

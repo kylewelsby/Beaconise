@@ -1,0 +1,80 @@
+<% semantic_form_for @event, :url => {:action => :pricing} do |f| %>
+	<% @event.artists.build %>
+	<%= f.error_messages %>
+	<section class="uiVerticalStep">
+		<% f.inputs do %>
+			<%= f.input :title %>
+		<% end %>
+	</section>
+	<section class="uiVerticalStep">
+		<% f.inputs do %>
+			<%= f.input :artists, :as => :autocomplete %>
+			<!-- Add ability to create a new artist if doesn't exist.  -->
+		<% end %>
+		<ul id="event_acts_selected" class="performances">
+			<li class="emptyList">No artists listed yet.<li>
+		</ul>
+	</section>
+	
+	<% f.buttons do %>
+		<%= f.commit_button %>
+	<% end %>
+<% end %>
+
+<% content_for(:foot) do %>
+<%= javascript_include_tag('jquery.autocomplete-min') %>
+<script>
+	jQuery(document).ready(function($){
+				
+		$("#event_artists_autocomplete").focus(function(){
+			$(this).val('');
+		}).autocomplete({
+			serviceUrl : '<%= search_artists_path(:json) %>',
+			minChars:2,
+			deferRequestBy:250,
+			maxHeight:400,
+			width:300,
+			zIndex:999,
+			onSelect: function(value,data){
+				el = $('#event_artists_autocomplete');
+				aID = data["artist"]["id"]
+				// input = new Element('input',{type: 'hidden', name: 'event[artists_ids][]', value: aID});
+				input = $('<input type="hidden" name="event[artist_ids][]" value="'+aID+'">');
+				el.after(input);
+				el = $('#event_acts_selected')
+				if(el.find('emptyList').length){
+					el.find('emptyList').slideUp('normal',function(){
+						$(this).remove();
+					})
+				}
+				el.append(data["artist"]["html"])
+				return false;
+			}
+		});
+		/*
+
+				new Ajax.Autocompleter('event_artists_autocomplete', 'event_artists_results', '', {
+			    updateElement: function(li) {
+			      item_id = li.id.replace('result_', '');
+			      li_id = 'selected_event_artists_' + item_id;
+			      if($(li_id) == null)
+			      {
+			        list_id = 'selected_event_artists';
+			        input = new Element('input', {type: 'hidden', name: 'event[artist_ids][]', value: item_id});
+			        rem = '$(\'' + li_id + '\').remove(); return false;'
+			        remove_link = new Element('a', {href: '#', onclick: rem}).update('Remove');
+			        item = new Element('li', {id: li_id}).update(input).insert(li.innerHTML).insert(remove_link);
+			        $(list_id).insert(item);
+			      }
+			      else
+			      {
+			        new Effect.Highlight(li_id)
+			      }
+			      $('event_artists_autocomplete').value = '';
+			    }
+			  })*/
+		
+
+	});
+</script>
+<% end %>

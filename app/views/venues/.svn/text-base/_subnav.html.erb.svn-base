@@ -1,0 +1,20 @@
+<% @venue ||= Venue.find_by_permalink(params[:venue_id]) %>
+<div>
+	<div id="secondaryNavigation">
+		<ul>
+			<%= content_tag :li, link_to("Venue", venue_path(@venue)) %>
+			<%= content_tag :li, link_to("Details", :controller => "venues", :action => "details", :id => @venue.permalink) %>
+			<%= content_tag :li, link_to("Events", venue_events_path(@venue)) %>
+			<%= content_tag :li, link_to("Photos", venue_photos_path(@venue)) %>
+			<%# content_tag :li, link_to("Guests", "guests") %>
+			<%# content_tag :li, link_to("VIP", "vip") %>
+			<%= content_tag :li, link_to("Contact", :controller => "venues", :action => "contact", :id => @venue.permalink) %>
+		</ul>
+		<% if business_signed_in? and @venue.business = current_business %>
+		<ul>
+			<%= content_tag :li, link_to("Edit", edit_venue_path(@venue)), :class => "edit" %>
+			<%= content_tag :li, link_to("Delete", venue_path(@venue), :confirm => "Are you sure you want to remove #{@venue.name}? \r\nAll your data will be permanently removed.", :method => :delete), :class => "delete" %>
+		</ul>
+		<% end %>
+	</div>
+</div>

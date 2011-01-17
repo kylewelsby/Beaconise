@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks
+END
+paperclip.rake
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks/paperclip.rake
+END
+setup.rake
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks/setup.rake
+END
+genres.rake
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks/genres.rake
+END
+cucumber.rake
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks/cucumber.rake
+END
+venues.rake
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks/venues.rake
+END
+wizardly.rake
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/beaconise/!svn/ver/55/branches/v2_0/lib/tasks/wizardly.rake
+END

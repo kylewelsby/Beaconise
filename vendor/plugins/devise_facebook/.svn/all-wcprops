@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/devise_facebook/README
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/quickpay
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/quickpay/helper.rb
+END
+notification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/beaconise/!svn/ver/55/branches/v2_0/vendor/plugins/active_merchant/lib/active_merchant/billing/integrations/quickpay/notification.rb
+END

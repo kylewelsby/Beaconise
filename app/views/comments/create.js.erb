@@ -1,0 +1,3 @@
+$("#comments_<%= @comment.commentable_id %>_count").html('<%= pluralize(Comment.count(:all, :conditions => {:commentable_id => @comment.commentable_id}), "comment")%>');
+$("#comments_<%= @comment.commentable_id %>").append('<%= escape_javascript(render(:partial => @comment)) %>');
+$("#comment_<%= @comment.id %>").slideDown();
