@@ -1,6 +1,0 @@
-<li class="promoter clickable">
-	<%= link_to promoter.name, promoter_path(promoter) %>
-	<div class="details" style="display:none;">
-		<%= pluralize(promoter.events.count(:conditions => ["commence_at >= ?", Time.now]), "upcoming event") %>
-	</div>
-</li>

@@ -1,2 +1,0 @@
-$("#comments_<%= @comment.commentable_id %>_count").html('<%= pluralize(Comment.count(:all, :conditions => {:commentable_id => @comment.commentable_id}), "comment")%>');
-$("#comment_<%= @comment.id %>").slideUp();

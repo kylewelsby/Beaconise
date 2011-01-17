@@ -1,3 +1,0 @@
-<div>
-	Welcome <%= current_user.forename %>
-</div>

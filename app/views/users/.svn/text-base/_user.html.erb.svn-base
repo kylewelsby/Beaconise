@@ -1,9 +1,0 @@
-<li class="rounded user <%= gender?(user,false) %> clickable">
-	<%= image_tag(get_profile_picture(user, :avatar), :class => "white imgRounded avatar") %>
-	<h5><%= link_to user.username, user_path(user) %></h5>
-	<div class="details" style="display:none;">
-		<h5 class="realname"><%= user.forename %> <%= user.surname %></h5>
-		<%= render :partial => "/users/identity", :locals => {:user => user} %>
-		<!-- <div class="activity first">RECENT ACTIVITY</div> -->
-	</div>
-</li>

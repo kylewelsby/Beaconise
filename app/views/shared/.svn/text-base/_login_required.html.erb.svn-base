@@ -1,7 +1,0 @@
-<div class="error login_required">
-	<p>You have to be a registered member to use this feature.</p>
-	<div class="buttons">
-		<%= link_to(t('devise.sessions.link'), new_session_path(:user)) %>
-		<%= link_to(t('devise.registrations.link'), new_registration_path(:user)) %>
-	</div>
-</div>

@@ -1,4 +1,0 @@
-<li id="<%= artist.mbid %>" class="artist_<%= artist.id %> artist<%= " importance_#{event.acts.find_by_artist_id(artist.id).importance}" if defined?(event) %><%= " position_#{event.acts.find_by_artist_id(artist.id).position}" if defined?(event) %>">
-	<%= link_to artist.name, artist_path(artist.permalink) %>
-	<%= link_to image_tag("fugue-icons/cross-small-circle.png"), remove_act_venue_event_path(event.venue, event, :artist_id => artist), :method => :delete, :confirm => "Are you sure you want to remove #{artist.name} from this event?", :class => "action" if business_signed_in? and defined?(event) and event.venue.business = current_business %>
-</li>

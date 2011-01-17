@@ -1,3 +1,0 @@
-<h1>Oops</h1>
-<p>I got lazy to program this section.</p>
-<p>Please email your issue <%= mail_to("info@beaconise.com", "info@beaconise.com") %></p>

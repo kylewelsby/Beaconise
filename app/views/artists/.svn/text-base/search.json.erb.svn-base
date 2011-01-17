@@ -1,5 +1,0 @@
-{
-	query:"<%= @q %>",
-	suggestions:[<%- @artists.each do |a| %>"<%= a.name %>",<%- end -%>],
-	data:[<%- @artists.each do |a| -%><%- a[:html] = render(:partial => "artists/artist.html", :object => a) -%><%= a.to_json %>,<%- end -%>]
-}

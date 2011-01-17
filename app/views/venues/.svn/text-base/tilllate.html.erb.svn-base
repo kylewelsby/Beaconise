@@ -1,2 +1,0 @@
-<h2>Your account is now connected with your till late listing</h2>
-<%= @result %>

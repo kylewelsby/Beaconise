@@ -1,2 +1,0 @@
-<h1>Sync</h1>
-<%= link_to "TillLate", sync_venue_event_path(@event.venue, @event, :service => "tilllate") %>

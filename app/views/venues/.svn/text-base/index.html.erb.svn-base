@@ -1,9 +1,0 @@
-<%= content_tag(:div, link_to("New Venue", new_venue_path, :class => "link-button"), :class => "create_new_action_button") if business_signed_in? %>
-<h1>Venues</h1>
-<ul id="venues">
-	<%= render :partial => @venues %>
-</ul>
-<%# will_paginate @venues %>
-<div>
-	<%= link_to t("venues.business_owner", :class => "UIlink_action"), new_venue_path %>
-</div>

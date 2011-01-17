@@ -1,8 +1,0 @@
-<h1>Third Party services you can connect to your Venue</h1>
-<%= "connected with #{@venue.tilllate_id}" if @venue.tilllate_id %>
-<%= link_to "TillLate", connect_venue_path(@venue, :service => 'tilllate') %>
-<br/>
-<%= "connected with #{@venue.songkick_id}" if @venue.songkick_id %>
-<%= link_to "SongKick", connect_venue_path(@venue, :service => 'songkick') %>
-<hr/>
-<%= link_to("Sync", sync_venue_path(@venue), :class => "link-button")%>

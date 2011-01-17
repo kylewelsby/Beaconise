@@ -1,3 +1,0 @@
-<h2>We couldn't find the page you were looking for.</h2>
-
-Feel free to contact <%= link_to "support", support_path %> if there's anything we can help you find.

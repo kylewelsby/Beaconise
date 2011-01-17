@@ -1,3 +1,0 @@
-<%- @venues.each do |venue| -%>
-<%= venue.name %>
-<%- end -%>

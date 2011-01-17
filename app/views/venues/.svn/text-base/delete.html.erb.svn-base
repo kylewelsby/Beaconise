@@ -1,8 +1,0 @@
-<div>
-	<h3>Delete</h3>
-	<p>Are you sure you want to delete this Venue?</p>
-	<p>Deleting this venue is a <strong>PERMANENT</strong> action, and will remove all items associated with this venue.</p>
-	<p align="center">
-		<%= link_to("Delete", venue_path(@venue), :confirm => "Are you really sure you want to delete #{h(@venue.name)}?", :method => :delete) %>
-	</p>
-</div>

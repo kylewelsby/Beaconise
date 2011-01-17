@@ -1,2 +1,0 @@
-<h2>Redirecting you to</h2>
-<%= link_to params[:url] %>

@@ -1,7 +1,0 @@
-TODO : Sync Facebook
-TODO : Add event
-<%= link_to t('venues.new.link'), new_venue_path %>
-<% current_business.venues.each do |venue| %>
-	<%= link_to venue.name, venue %>
-<% end %>
-<%= render current_business.venues %>

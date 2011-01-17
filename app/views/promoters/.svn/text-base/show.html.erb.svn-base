@@ -1,6 +1,0 @@
-<h1><%= @promoter.name %></h1>
-<div class="site_notice"><strong>Site Notice</strong> this area is still under development and has limited functionality. </div>
-
-<ul class="events">
-	<%= render @promoter.events %>
-</ul>
